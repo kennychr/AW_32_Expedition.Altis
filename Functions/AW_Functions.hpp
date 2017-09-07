@@ -11,6 +11,13 @@ class AW {
     file = "Functions\BASE";
 
   };
+  class CASEVAC {
+    file = "Functions\CASEVAC";
+    class casevac_ai      {};
+    class casevac_call  {};
+    class casevac_init {};
+
+  };
   class FOB {
     file = "Functions\FOB";
 
@@ -49,6 +56,9 @@ class AW {
   };
   class Tasks {
     file = "Functions\Tasks";
-
+    class task_generate_task  {};
+    class task_makeTask       {};
+    class task_patrol         {};
+    class task_taskInit       {};
   };
 };

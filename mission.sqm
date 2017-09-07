@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=194;
+		nextID=199;
 	};
 	class MarkerIDProvider
 	{
-		nextID=2;
+		nextID=3;
 	};
 	class Camera
 	{
-		pos[]={2420.8735,199.37259,22158.568};
-		dir[]={0.69582784,-0.68549687,-0.21432291};
-		up[]={0.65512419,0.72807252,-0.20178574};
-		aside[]={-0.29436776,8.3973282e-007,-0.95570052};
+		pos[]={2328.3931,348.57892,22134.25};
+		dir[]={0.34805214,-0.84670043,-0.40247625};
+		up[]={0.55383593,0.53206921,-0.64043778};
+		aside[]={-0.75640625,1.0123476e-006,-0.65412146};
 	};
 };
 binarizationWanted=0;
@@ -76,7 +76,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			dataType="Marker";
@@ -88,6 +88,15 @@ class Mission
 		};
 		class Item1
 		{
+			dataType="Marker";
+			position[]={11560.804,0,11753.004};
+			name="AW_CASEVAC_START";
+			type="b_med";
+			id=194;
+			atlOffset=-22.730515;
+		};
+		class Item2
+		{
 			dataType="Group";
 			side="West";
 			class Entities
@@ -98,7 +107,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2547.4673,22.789942,22145.057};
+						position[]={11647.997,12.165796,13342.227};
 					};
 					side="West";
 					flags=7;
@@ -106,16 +115,56 @@ class Mission
 					{
 						isPlayer=1;
 					};
-					id=193;
-					type="B_recon_TL_F";
-					atlOffset=-0.083368301;
+					id=197;
+					type="B_support_AMG_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
-			id=192;
-			atlOffset=-0.083368301;
+			id=196;
 		};
 	};
 };
