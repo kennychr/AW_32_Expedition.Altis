@@ -40,12 +40,13 @@ class Params {
 //Functions
 class CfgFunctions {
   #include "Functions\AW_Functions.hpp"
+
 };
 
-//Dialogs
+//Dialogs etc.
 #include "Dialogs\casevac_dialog.hpp"
 #include "Dialogs\Satcom_Dialog.hpp"
-
+#include "CW_ACIM\Dialog\UI\ACIM_ui_include.hpp"
 
 class AW_Enemy {
 	#include "Config\enemy.hpp"

@@ -41,6 +41,7 @@ class AW {
   }
   class Player {
     file = "Functions\Player";
+    class player_getUnitsArea {};
 
   };
   class Position {
